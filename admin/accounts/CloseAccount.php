@@ -9,29 +9,6 @@ include "../Notification.php";
 include "../adminData.php";
 include "../../config.php";
 
-/* 
-
-set id from 1 in sql
-
-SET @autoid := 0;
-UPDATE login SET ID = @autoid := (@autoid+1);
-ALTER TABLE login AUTO_INCREMENT = 1; 
-
-127.0.0.1/skybank/customer_detail/		http://localhost/phpmyadmin/tbl_sql.php?db=skybank&table=customer_detail
- Showing rows 0 -  4 (5 total, Query took 0.0030 seconds.)
-
-Used to calculate Graph
-SELECT
-    DATE(Create_Date) AS DATE,
-    COUNT(C_No)
-FROM
-    customer_detail
-GROUP BY
-    DATE(Create_Date)
-
-
-
-*/
 
 
 $resetQuery = "SET @autoid := 0;
